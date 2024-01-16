@@ -4,6 +4,10 @@ const btns = document.querySelectorAll('.btn')
 
 btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        console.log(e.currentTarget)
+        changeIcon();
     })
 })
+
+function changeIcon(btn) {
+    
+}

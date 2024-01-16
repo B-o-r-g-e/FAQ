@@ -73,6 +73,14 @@ button {
     transition: all 0.3s linear;
 }
 
+.plus {
+    display: block;
+}
+
+.hide-plus{
+    display: none;
+}
+
 .minus {
     display: none;
 }
