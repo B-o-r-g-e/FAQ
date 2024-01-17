@@ -60,24 +60,29 @@ body {
     display: flex;
 }
 
-button {
-    text-decoration: none;
-    border: none;
-    outline: none;
-    background: transparent;
-    cursor: pointer;
-}
+/*button {*/
+/*    text-decoration: none;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    background: transparent;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.btn {
-    height: 25px;
-    transition: all 0.3s linear;
-}
+/*.btn {*/
+/*    !*height: 25px;*!*/
+/*    transition: all 0.3s linear;*/
+/*    font-size: 1.5rem;*/
+/*    background: transparent;*/
+/*    border-color: transparent;*/
+/*    cursor: pointer;*/
+/*    color: gold;*/
+/*}*/
 
 .plus {
     display: block;
 }
 
-.hide-plus{
+.hide-plus {
     display: none;
 }
 
