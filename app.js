@@ -4,10 +4,7 @@ const btns = document.querySelectorAll('.btn')
 
 btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        changeIcon();
+        let current = e.currentTarget.classList
+
     })
 })
-
-function changeIcon(btn) {
-    
-}
