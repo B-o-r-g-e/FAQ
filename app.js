@@ -1,22 +1,3 @@
-// //dom buttons
-//
-// const btns = document.querySelectorAll('.btn')
-//
-// btns.forEach((btn) => {
-//     btn.addEventListener('click', (e) => {
-//         const current = e.currentTarget.classList
-//         if (current.contains('plus')) {
-//             current.remove('plus')
-//             current.add('show-minus')
-//         }
-//     })
-// })
-//
-// https://jsfiddle.net/cfwv9djk/7/
-
-
-
-
 const btns = document.querySelectorAll('.btn');
 
 btns.forEach((btn) => {
