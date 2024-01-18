@@ -25,5 +25,9 @@
 const questionContainers = document.querySelectorAll('.question-container')
 
 questionContainers.forEach((questionContainer) => {
+    const btn = questionContainer.querySelector('.btn')
 
+    btn.addEventListener('click', () => {
+
+    })
 })
