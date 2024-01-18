@@ -28,6 +28,11 @@ questionContainers.forEach((questionContainer) => {
     btns.forEach((btn) => {
         btn.addEventListener('click', () => {
 
+            const parent = btn.parentElement.parentElement.parentElement
+            if (parent !== questionContainer) {
+                console.log('jjk')
+            }
+
             // Toggle between showing plus and minus buttons
             btnPlus.classList.toggle('hide-plus');
             btnMinus.classList.toggle('show-minus');
