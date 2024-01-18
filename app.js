@@ -2,6 +2,9 @@ const btns = document.querySelectorAll('.btn');
 
 btns.forEach((btn) => {
     btn.addEventListener('click', () => {
+
+
+
         const questionContainer = btn.closest('.question-container');
         const btnPlus = questionContainer.querySelector('.btn.plus');
         const btnMinus = questionContainer.querySelector('.btn.minus');
