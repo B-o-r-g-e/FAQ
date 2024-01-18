@@ -30,12 +30,12 @@ questionContainers.forEach((questionContainer) => {
     const btnMinus = questionContainer.querySelector('.btn.minus');
     const answer = questionContainer.querySelector('.answer');
 
-    btn.addEventListener('click', () => {
-        questionContainers.forEach((item) => {
-            if (item !== questionContainer) {
-                item.classList.remove('show-answer')
-            }
-        })
+    btn.addEventListener('click', (item) => {
+        // questionContainers.forEach((item) => {
+        //     if (item.closest('.question-container') !== questionContainer) {
+        //         item.classList.remove('show-answer')
+        //     }
+        // })
 
         // Toggle between showing plus and minus buttons
         btnPlus.classList.toggle('hide-plus');
@@ -43,5 +43,9 @@ questionContainers.forEach((questionContainer) => {
 
         // Toggle the display of the answer
         answer.classList.toggle('show-answer');
+
+        if (item.closest('.question-container') !== questionContainer) {
+            item.classList.remove('show-answer')
+        }
     })
 })
