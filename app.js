@@ -22,4 +22,4 @@ btns.forEach((btn) => {
     });
 });
 
-const questionContainer = btn.closest('.question-container');
+const
