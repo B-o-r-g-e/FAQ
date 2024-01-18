@@ -28,6 +28,10 @@ questionContainers.forEach((questionContainer) => {
     const btn = questionContainer.querySelector('.btn')
 
     btn.addEventListener('click', () => {
+        questionContainers.forEach((item) => {
+            if (item !== questionContainer) {
 
+            }
+        })
     })
 })
