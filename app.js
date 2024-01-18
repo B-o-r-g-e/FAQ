@@ -2,13 +2,14 @@ const btns = document.querySelectorAll('.btn');
 
 btns.forEach((btn) => {
     btn.addEventListener('click', () => {
-
-
-
         const questionContainer = btn.closest('.question-container');
         const btnPlus = questionContainer.querySelector('.btn.plus');
         const btnMinus = questionContainer.querySelector('.btn.minus');
         const answer = questionContainer.querySelector('.answer');
+
+        if (answer) {
+            answer.classList.remove('show-answer')
+        }
 
         // Toggle between showing plus and minus buttons
         btnPlus.classList.toggle('hide-plus');
