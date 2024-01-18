@@ -60,13 +60,13 @@ body {
     display: flex;
 }
 
-/*button {*/
-/*    text-decoration: none;*/
-/*    border: none;*/
-/*    outline: none;*/
-/*    background: transparent;*/
-/*    cursor: pointer;*/
-/*}*/
+button {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
 
 /*.btn {*/
 /*    !*height: 25px;*!*/
