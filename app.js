@@ -47,15 +47,18 @@
 
 const questionContainers = document.querySelectorAll('.question-container');
 
+let totalHeight = Array.from(questionContainers)
+    .reduce((acc, child) => acc + child.offsetHeight, 0)
 
+console.log(totalHeight)
 
 questionContainers.forEach((questionContainer) => {
     const btns = questionContainer.querySelectorAll('.btn');
     const btnPlus = questionContainer.querySelector('.btn.plus');
     const btnMinus = questionContainer.querySelector('.btn.minus');
     const answer = questionContainer.querySelector('.answer');
-    console.log(questionContainer.offsetHeight)
-    console.log(typeof questionContainer)
+    // console.log(questionContainer.offsetHeight)
+    // console.log(typeof questionContainer)
 
     btns.forEach((btn) => {
         btn.addEventListener('click', () => {
