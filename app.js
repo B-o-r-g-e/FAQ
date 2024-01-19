@@ -52,6 +52,8 @@ questionContainers.forEach((questionContainer) => {
     const btnPlus = questionContainer.querySelector('.btn.plus');
     const btnMinus = questionContainer.querySelector('.btn.minus');
     const answer = questionContainer.querySelector('.answer');
+    console.log(questionContainer.offsetHeight)
+    console.log(questionContainers.offsetHeight)
 
     btns.forEach((btn) => {
         btn.addEventListener('click', () => {
