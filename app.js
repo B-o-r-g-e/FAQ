@@ -45,14 +45,14 @@
 // })
 
 
-const questions = document.querySelector('.questions')
+const container = document.querySelector('.container')
 const questionContainers = document.querySelectorAll('.question-container');
 
 let totalHeight = Array.from(questionContainers)
     .reduce((acc, child) => acc + child.offsetHeight, 0)
 
 console.log(totalHeight)
-questions.style.height = totalHeight + 'px'
+
 
 questionContainers.forEach((questionContainer) => {
     const btns = questionContainer.querySelectorAll('.btn');
@@ -81,3 +81,5 @@ questionContainers.forEach((questionContainer) => {
     });
 });
 
+container.style.height = totalHeight + 'px'
+console.log(container.offsetHeight)
