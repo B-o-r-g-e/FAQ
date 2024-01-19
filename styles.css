@@ -57,6 +57,11 @@ body {
     color: hsl(292, 42%, 14%);
 }
 
+.question-title h2:hover {
+    color: purple;
+    cursor: pointer;
+}
+
 .buttons {
     display: flex;
 }
