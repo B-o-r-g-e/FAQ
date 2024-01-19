@@ -117,7 +117,13 @@ p {
         font-size: 15px;
     }
 
+    .container {
+        height: 70%;
+        width: 80%;
+
+    }
+
     .star-icon {
-        height: 10px;
+        height: 20px;
     }
 }
