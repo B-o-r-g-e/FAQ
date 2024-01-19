@@ -51,7 +51,7 @@ const questionContainers = document.querySelectorAll('.question-container');
 let totalHeight = Array.from(questionContainers)
     .reduce((acc, child) => acc + child.offsetHeight, 120)
 
-console.log(totalHeight)
+// console.log(totalHeight)
 
 
 questionContainers.forEach((questionContainer) => {
@@ -79,10 +79,11 @@ questionContainers.forEach((questionContainer) => {
             btnMinus.classList.toggle('show-minus');
 
             if (answer.classList.contains('show-answer')) {
-                console.log(answer.offsetHeight)
+                const answerHeight = answer.offsetHeight
 
-                container.style.height = totalHeight + 'px'
-                console.log(container.offsetHeight)
+                container.style.height = totalHeight + answerHeight + 'px'
+                // console.log(Height)
+
             }
         });
     });
